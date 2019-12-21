@@ -85,11 +85,6 @@ input:focus {
 	outline: none;
 }
 
-.inp_wrap.ui-hasDelForm {
-	
-}
-
-
 .inp_wrap input:focus {
 	border-color: #2d2d2f;
 }
@@ -450,10 +445,6 @@ input.form_radio.inp-error:disabled+label:before {
 	color: #ed4b30
 }
 
-input.form_chk:focus+label,
-input.form_radio:focus+label {
-	/* box-shadow: 0 0 1px #4d90fe */
-}
 
 input.form_chk_slide + label{position: relative;display: inline-block;}
 input.form_chk_slide + label:before{
@@ -700,25 +691,6 @@ ul.ui-tab li span {
 .ui-accordian li:last-child {
 	border-bottom: 1px solid #c0c0c0
 }
-
-.ui-accordian li.active {
-}
-
-.ui-accordian li.active+li {
-}
-
-.ui-accordian li.active:last-child {
-}
-
-.ui-accordian li:hover {
-}
-
-.ui-accordian li:hover+li {}
-
-.ui-accordian li:last-child:hover {
-	
-}
-
 
 
 
