@@ -1,0 +1,78 @@
+@charset "utf-8";
+
+/* reset */
+* { margin: 0; padding: 0; -webkit-text-size-adjust: none; word-break: keep-all }
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video { margin: 0; padding: 0; border: 0; font-size: 100%; font-family:'genesis', sans-serif; vertical-align: baseline; font-weight: 300; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section { display: block; }
+body { line-height: 1; }
+ol, ul { list-style: none; }
+blockquote, q { quotes: none; }
+blockquote:before, blockquote:after, q:before, q:after { content: ''; content: none; }
+table { border-collapse: collapse; border-spacing: 0; }
+button { padding: 0; background: 0; border: 0; cursor: pointer; letter-spacing: -1px; }
+a { text-decoration: none; }
+a:link, a:hover, a:active, a:visited { text-decoration: none; color: initial }
+input[type="checkbox"],
+input[type="radio"] { overflow: hidden; border: 0; position: absolute; width: 1px; height: 1px; clip: rect(1px, 1px, 1px, 1px); clip-path: inset(50%);
+}
+html,body{height: 100%;}
+
+/* //mark: fonts */
+@font-face {
+	font-family: 'genesisHead';
+	font-style: normal;
+	font-weight: 100;
+	src: url('../fonts/GenesisSansHead-Light.eot');
+	src: url('../fonts/GenesisSansHead-Light.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/GenesisSansHead-Light.woff2') format('woff2'),
+		url('../fonts/GenesisSansHead-Light.woff') format('woff');
+}
+@font-face {
+	font-family: 'genesisHead';
+	font-style: normal;
+	font-weight: 300;
+	src: url('../fonts/GenesisSansHead-Regular.eot');
+	src: url('../fonts/GenesisSansHead-Regular.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/GenesisSansHead-Regular.woff2') format('woff2'),
+		url('../fonts/GenesisSansHead-Regular.woff') format('woff');
+}
+
+@font-face {
+	font-family: 'genesis';
+	font-style: normal;
+	font-weight: 300;
+	src: url('../fonts/GenesisSansText-Regular.eot');
+	src: url('../fonts/GenesisSansText-Regular.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/GenesisSansText-Regular.woff2') format('woff2'),
+		url('../fonts/GenesisSansText-Regular.woff') format('woff');
+}
+@font-face {
+	font-family: 'genesis';
+	font-style: normal;
+	font-weight: 500;
+	src: url('../fonts/GenesisSansText-Medium.eot');
+	src: url('../fonts/GenesisSansText-Medium.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/GenesisSansText-Medium.woff2') format('woff2'),
+		url('../fonts/GenesisSansText-Medium.woff') format('woff');
+}
+@font-face {
+	font-family: 'genesis';
+	font-style: normal;
+	font-weight: 700;
+	src: url('../fonts/GenesisSansText-Bold.eot');
+	src: url('../fonts/GenesisSansText-Bold.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/GenesisSansText-Bold.woff2') format('woff2'),
+		url('../fonts/GenesisSansText-Bold.woff') format('woff');
+}
+
+
+.fw-l{font-weight: 100}
+.fw-r{font-weight: 300}
+.fw-m{font-weight: 500}
+.fw-b{font-weight: 700}
+.fm-gh{ font-family: 'genesisHead'; }
+
+/* 선택 포커스, 아웃라인 제거 할시 하단 주석 제거 */
+/* *{-webkit-tap-highlight-color:transparent;outline: none;} */

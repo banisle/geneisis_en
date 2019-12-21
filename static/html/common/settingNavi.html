@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="initial-scale=1, viewport-fit=cover">
+    <link href="../../img/common/favicon.ico" rel="shrtcut icon">
+	<link href="../../img/common/favicon-152.png" rel="apple-touch-icon-precomposed">
+    <title>Navigation settings - GENESIS</title>
+    <link rel="stylesheet" href="../../css/style.css">
+    <script src="../../js/jquery-3.4.1.min.js"></script>
+    <script src="../../js/TNUI.js"></script>
+    <script src="../../js/common.js"></script>
+</head>
+<body class="sub">
+    <div class="container">
+        <header>
+            <h1>Navigation settings</h1>
+            <a href="javascript:history.back()" class="back"><span><span class="hidden">back</span></span></a>
+        </header>
+        <section>
+            <article>
+                <ul class="sub_menulist">
+                    <!-- //mark :Screen -->
+                    <li class="has_sub ">
+                        <span class="tit">Screen</span>
+                        <ul class="ui-accordian" data-allow-multiple="true" data-trans-speed="300">
+                            <li>
+                                <h3 class="acco-btn">
+                                    <button type="button" id="ui-acco01" class="ui-btn-acco" data-open="true"  aria-expanded="false" aria-controls="acco01" aria-disabled="false"><span>Map text</span></button>
+                                </h3>
+                                <div class="ui-acco-ct" id="acco01" aria-labelledby="ui-acco01" role="region">
+                                    <ul>
+                                        <li>
+                                            <span class="">
+                                                <input type="radio" id="rad-on01" class="form_radio" name="mapTxt" checked>
+                                                <label for="rad-on01"><span class="label-txt">Usually</span></label>
+                                            </span>
+                                        </li>
+                                        <li>
+                                            <span class="">
+                                                <input type="radio" id="rad-on02" class="form_radio" name="mapTxt">
+                                                <label for="rad-on02"><span class="label-txt">Big</span></label>
+                                            </span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li>
+                                <h3 class="acco-btn">
+                                    <button type="button" id="ui-acco02" class="ui-btn-acco" data-open="true"  aria-expanded="false" aria-controls="acco02" aria-disabled="false"><span>Map themes</span></button>
+                                </h3>
+                                <div class="ui-acco-ct" id="acco02" aria-labelledby="ui-acco02" role="region">
+                                    <ul>
+                                        <li>
+                                            <span class="">
+                                                <input type="radio" id="rad-on11" class="form_radio" name="mapTm" checked>
+                                                <label for="rad-on11"><span class="label-txt">milk</span></label>
+                                            </span>
+                                        </li>
+                                        <li>
+                                            <span class="">
+                                                <input type="radio" id="rad-on12" class="form_radio" name="mapTm">
+                                                <label for="rad-on12"><span class="label-txt">Cafe Latte</span></label>
+                                            </span>
+                                        </li>
+                                        <li>
+                                            <span class="">
+                                                <input type="radio" id="rad-on13" class="form_radio" name="mapTm">
+                                                <label for="rad-on13"><span class="label-txt">mocha</span></label>
+                                            </span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li>
+                                <h3 class="acco-btn">
+                                    <button type="button" id="ui-acco03" class="ui-btn-acco" data-open="true"  aria-expanded="false" aria-controls="acco03" aria-disabled="false"><span>Address</span></button>
+                                </h3>
+                                <div class="ui-acco-ct" id="acco03" aria-labelledby="ui-acco03" role="region">
+                                    <ul>
+                                        <li>
+                                            <span class="">
+                                                <input type="radio" id="rad-on21" class="form_radio" name="address" checked>
+                                                <label for="rad-on21"><span class="label-txt">Street name address</span></label>
+                                            </span>
+                                        </li>
+                                        <li>
+                                            <span class="">
+                                                <input type="radio" id="rad-on22" class="form_radio" name="address">
+                                                <label for="rad-on22"><span class="label-txt">Address</span></label>
+                                            </span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            
+                        </ul>
+                        <!-- Facility indication -->
+                        <ul>
+                            <li>
+                                <span class="">
+                                    <input type="checkbox" id="chk-cate01" class="form_chk">
+                                    <label for="chk-cate01"><span class="label-txt"><strong>Facility indication</strong></span></label>
+                                </span>
+                            </li>
+                        </ul>
+                    </li>
+                    <!-- //mark : Voice guidance -->
+                    <li class="has_sub ">
+                        <span class="tit">Voice guidance</span>
+                        <ul class="ui-accordian" data-allow-multiple="true" data-trans-speed="300">
+                            <li>
+                                <h3 class="acco-btn">
+                                    <button type="button" id="ui-acco11" class="ui-btn-acco" data-open="true"  aria-expanded="false" aria-controls="acco11" aria-disabled="false"><span>Set the guide sound when navigation is muted</span></button>
+                                </h3>
+                                <div class="ui-acco-ct" id="acco11" aria-labelledby="ui-acco11" role="region">
+                                    <ul>
+                                        <li>
+                                            <span class="">
+                                                <input type="radio" id="rad-on31" class="form_radio" name="voiceG" checked>
+                                                <label for="rad-on31"><span class="label-txt">No guidance</span></label>
+                                            </span>
+                                        </li>
+                                        <li>
+                                            <span class="">
+                                                <input type="radio" id="rad-on32" class="form_radio" name="voiceG">
+                                                <label for="rad-on32"><span class="label-txt">Beep Guide</span></label>
+                                            </span>
+                                        </li>
+                                        <li>
+                                            <span class="">
+                                                <input type="radio" id="rad-on33" class="form_radio" name="voiceG">
+                                                <label for="rad-on33"><span class="label-txt">Mocha Beep + Voice Prompt</span></label>
+                                            </span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li>
+                                <h3 class="acco-btn">
+                                    <button type="button" id="ui-acco21" class="ui-btn-acco" data-open="true"  aria-expanded="false" aria-controls="acco21" aria-disabled="false"><span>Voice distance indication</span></button>
+                                </h3>
+                                <div class="ui-acco-ct" id="acco21" aria-labelledby="ui-acco21" role="region">
+                                    <ul>
+                                        <li>
+                                            <span class="">
+                                                <input type="radio" id="rad-on41" class="form_radio" name="voiceDi" checked>
+                                                <label for="rad-on41"><span class="label-txt">Segment distance</span></label>
+                                            </span>
+                                        </li>
+                                        <li>
+                                            <span class="">
+                                                <input type="radio" id="rad-on42" class="form_radio" name="voiceDi">
+                                                <label for="rad-on22"><span class="label-txt">Cumulative distance</span></label>
+                                            </span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            
+                        </ul>
+                        <!-- Camera Guide -->
+                        <ul>
+                            <li>
+                                <span class="">
+                                    <input type="checkbox" id="chk-cate02" class="form_chk">
+                                    <label for="chk-cate02"><span class="label-txt"><strong>Camera Guide</strong></span></label>
+                                </span>
+                            </li>
+                        </ul>
+                    </li>
+                    <!-- //mark : Route navigation -->
+                    <li class="has_sub ">
+                        <span class="tit">Route navigation</span>
+                        <ul class="ui-accordian" data-allow-multiple="true" data-trans-speed="300">
+                            <li>
+                                <h3 class="acco-btn">
+                                    <button type="button" id="ui-acco31" class="ui-btn-acco" data-open="true"  aria-expanded="false" aria-controls="acco31" aria-disabled="false"><span>High Pass Guide Settings</span></button>
+                                </h3>
+                                <div class="ui-acco-ct" id="acco31" aria-labelledby="ui-acco31" role="region">
+                                    <ul>
+                                        <li>
+                                            <span class="">
+                                                <input type="radio" id="rad-on51" class="form_radio" name="routeNav" checked>
+                                                <label for="rad-on51"><span class="label-txt">High Pass Directions</span></label>
+                                            </span>
+                                        </li>
+                                        <li>
+                                            <span class="">
+                                                <input type="radio" id="rad-on52" class="form_radio" name="routeNav">
+                                                <label for="rad-on52"><span class="label-txt">High Pass exclusive tollgate notification</span></label>
+                                            </span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                        </ul>
+                        <!-- Revisit traffic information -->
+                        <ul>
+                            <li>
+                                <span class="">
+                                    <input type="checkbox" id="chk-cate03" class="form_chk">
+                                    <label for="chk-cate03"><span class="label-txt"><strong>Revisit traffic information</strong></span></label>
+                                </span>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+
+
+
+
+                <!-- //mark: info box -->
+                <div class="info_box_wrap">
+                    <div class="info_box">
+                        <strong>Screen</strong>
+                        <dl>
+                            <dt><span class="tit">Map text</span></dt>
+                            <dd><p>Set the map font size.</p></dd>
+                        </dl>
+                        <dl>
+                            <dt><span class="tit">Map themes</span></dt>
+                            <dd><p>Set the theme of the map to one of three.</p></dd>
+                        </dl>
+                        <dl>
+                            <dt><span class="tit">Address display</span></dt>
+                            <dd><p>Set the address display as street name and street number.</p></dd>
+                        </dl>
+                        <dl>
+                            <dt><span class="tit">Facility indication</span></dt>
+                            <dd><p>Set the type of nearby facilities to display an icon on the map.</p></dd>
+                        </dl>
+                    </div>
+                    <div class="info_box">
+                        <strong>Voice guidance</strong>
+                        <dl>
+                            <dt><span class="tit">Guide sound setting when navigating mute</span></dt>
+                            <dd><p>Set the warning mode for safe driving in mute state.</p></dd>
+                        </dl>
+                        <dl>
+                            <dt><span class="tit">Guide distance sign</span></dt>
+                            <dd><p>Set how the distance to the guide position is displayed</p></dd>
+                        </dl>
+                        <dl>
+                            <dt><span class="tit">Camera guide</span></dt>
+                            <dd><p>Set the camera guide point and target.</p></dd>
+                        </dl>
+                    </div>
+                    <div class="info_box">
+                        <strong>Route navigation</strong>
+                        <dl>
+                            <dt><span class="tit">High Pass Guide</span></dt>
+                            <dd><p>Set how high pass is used.<br/> Notification settings such as a dedicated toll gate are possible.</p></dd>
+                        </dl>
+                        <dl>
+                            <dt><span class="tit">Revisit traffic information</span></dt>
+                            <dd><p>Automatically reflect the latest traffic information at regular intervals Rescan.</p></dd>
+                        </dl>
+                    </div>
+                </div>
+            </article>
+        </section>
+    </div>
+</body>
+</html>

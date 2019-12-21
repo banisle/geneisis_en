@@ -1,0 +1,418 @@
+/* //mark : login */
+body.login{
+    background: #101113;
+}
+.container.login{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    padding: 0 25px;
+    background: #101113;
+    margin-top: -79px;
+}
+.container.login h1{
+    padding: 0 0 77px;
+    text-align: center;
+}
+.container.login h1 > img{
+    width: 24.375%;
+}
+
+.login_id{margin-bottom: 7px;}
+.login_pass{margin-bottom: 27px;}
+.login_id,
+.login_pass{ position: relative; }
+.login_id > input,
+.login_pass > input { padding-left:50px }
+.login_id:after,
+.login_pass:after{ 
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 17px;
+    width: 15px;
+    height: 16px;
+    background: url('../img/icn_ir.png') -42px 0;
+    background-size: 85px;
+    transform: translateY(-50%);
+}
+.login_pass:after{
+    background-position-x: -63px;
+    width: 16px;
+}
+
+footer .copy{
+    position: absolute;
+    bottom: 47px;
+    width: 100%;
+    color: #6f6f6f;
+    font-size: 8px;
+    text-align: center;
+}
+
+/* //mark: main */
+body.main{
+    background: #101113;
+}
+.container.main{
+    height: 100%;
+    color: #fff;
+}
+.container.main .menulist li a > span{
+    display: flex;
+    position: relative;
+    align-items: center;
+    min-height: 69px;
+    padding-left: 16px;
+    font-family: 'genesisHead';
+    font-weight: 100;
+    font-size: 15px;
+    border-bottom:1px solid #2d2d2f;
+    color: #fff;
+}
+.container.main .menulist li a > span:after{
+    content: '';
+    width: 7px;
+    height: 13px;
+    position: absolute;
+    top:50%;
+    right: 16px;
+    background: url('../img/icn_ir.png') -21px -46px;
+    background-size: 85px;
+    transform: translateY(-50%);
+}
+
+.container.main .menulist li a:hover > span{
+    background: #141414;
+}
+
+/* //mark: sub */
+body.sub{
+    background: #fafbfd;
+}
+body.sub .container{
+    padding-bottom: 40px;
+}
+body.sub .depth2{
+    padding-left: 16px;
+    background: #101113;
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 35px;
+    color: #fff;
+}
+
+/* //mark : setting */
+.sub_menulist > li{
+    display: flex;
+    position: relative;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-left: 16px;
+    padding-top: 30px;
+    padding-right: 27px;
+    padding-bottom: 8px;
+    font-family: 'genesisHead';
+    font-weight: 100;
+    font-size: 15px;
+    border-bottom: 1px solid #a7a7a8;
+    color: #fff;
+}
+.sub_menulist > li .tit{ 
+    width: 100%;
+    font-weight: 500;
+    color: #141414;
+}
+.sub_menulist > li .sub_txt{
+    display: block;
+    color: #8d95a0;
+    padding-top: 5px;
+    padding-right: 50px;
+    font-size: 10px;
+}
+.sub_menulist > li.has_sub{
+    padding-right: 0;
+    padding-bottom: 0;
+    border-bottom:0;
+}
+.sub_menulist > li.has_sub .tit{
+    padding-right: 27px;
+    padding-bottom: 6px;
+    border-bottom: 1px solid #a7a7a8;
+}
+.sub_menulist > li.has_sub ul{
+    width: 100%;
+}
+.sub_menulist > li.has_sub ul li > span{
+    display: flex;
+    justify-content: space-between;
+    min-height: 55px;
+    align-items: center;
+}
+.sub_menulist > li.has_sub ul li{
+    padding-right: 27px;
+    border-bottom: 1px solid #e9eaec;
+}
+.sub_menulist > li.has_sub .ui-accordian li{
+    padding-right: 0;
+    border-bottom: 0;
+}
+.sub_menulist > li.has_sub .ui-accordian li.active{
+    border-bottom: 1px solid #e9eaec;
+}
+.sub_menulist > li.has_sub .ui-accordian h3.acco-btn .ui-btn-acco > span{
+    font-weight: 500;
+}
+.sub_menulist > li.has_sub .ui-accordian .ui-acco-ct > ul{
+    padding: 9px 0;
+}
+.sub_menulist > li.has_sub .ui-accordian .ui-acco-ct li{
+    padding-right: 27px;
+    border: 0;
+}
+.sub_menulist > li.has_sub .ui-accordian .ui-acco-ct li > span{
+    min-height: 37px;
+}
+.sub_menulist > li.has_sub .ui-accordian .ui-acco-ct li .label-txt{
+    color: rgba(54, 63, 75, .85);
+}
+.sub_menulist > li.has_sub ul li .label-txt{
+    font-weight: 300;
+    font-size: 13px;
+    color: rgba(20,20,20,.85);
+}
+
+.set_menulist {
+    padding:16px 16px 40px;
+}
+.set_menulist li{
+    display: flex;
+    position: relative;
+    align-items: center;
+    min-height: 69px;
+    font-family: 'genesisHead';
+    font-weight: 100;
+    font-size: 15px;
+    border-bottom:1px solid rgb(111, 111, 111, .3);
+    color: #fff;
+}
+.set_menulist li:after{
+    content: '';
+    width: 7px;
+    height: 13px;
+    position: absolute;
+    top:50%;
+    right: 16px;
+    background: url('../img/icn_ir.png') -21px -46px;
+    background-size: 85px;
+    transform: translateY(-50%);
+
+}
+.set_menulist li >a {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 0;
+}
+.set_menulist li .ch_badge {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-shrink: 0;
+    width: 32px;
+    padding: 0 3px;
+    height: 32px;
+    border-radius: 50%;
+    box-sizing: border-box;
+    background: #141414;
+    color: rgba(255,255,255,.7);
+    font-size: 10px;
+    text-transform: uppercase;
+}
+.set_menulist li .ch_badge > span{
+    font-size: 13px;
+    font-weight: 500;
+    color: #fff;
+}
+.set_menulist li .tit_grp{
+    padding-left: 16px;
+    padding-right: 30px;
+}
+.set_menulist li .tit_grp .hz {
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.set_menulist li .tit_grp .title {
+    display: block;
+    font-size: 13px;
+    color: rgba(20,20,20,.85);
+}
+
+.radio_prst .label-txt .hz{
+    float: left;
+    font-weight: 500;
+    font-size: 15px;
+    color: rgba(20,20,20,.85);
+}
+.radio_prst .label-txt .hz_name{
+    float: left;
+    position: relative;
+    padding-left: 6px;
+    margin-left: 6px;
+    color: rgba(20,20,20,.85);
+}
+.radio_prst .label-txt .hz_name:after{
+    content: '';
+    position: absolute;
+    top:2px;
+    bottom:2px;
+    left:0;
+    width: 1px;
+    background-color: #d0d1d2;
+}
+
+/* //mark: common */
+body.bg_type01{
+    background: #f3f3fb;
+}
+.ver_info_wrap{
+    padding: 23px 16px 30px;
+}
+.ver_info_wrap .ver_info{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 53px;
+    font-size: 10px;
+    font-weight: 300;
+    text-align: center;
+    background: #rgba(0,0,0.7);
+}
+
+.info_box_wrap{
+    padding: 30px 16px 0;
+}
+.info_box_wrap .info_box{
+    padding: 21px 12px 31px;
+    background: rgba(0,0,0,.1);
+    color: rgba(20,20,20,.7);
+    font-size: 11px;
+}
+.info_box_wrap .info_box + .info_box{
+    padding-top: 0;
+}
+.info_box_wrap .info_box >strong{
+    display: block;
+    padding-bottom: 4px;
+    margin-bottom: 8px;
+    font-size: 12px;
+    font-weight: 500;
+    border-bottom: 1px solid rgba(111,111,111,.6);
+}
+.info_box_wrap .info_box dt .tit{
+    font-size: 11px;
+    line-height: 18px;;
+    color: #141414;
+}
+.info_box_wrap .info_box dd{
+    padding-bottom: 9px;
+    border-bottom: 1px solid #d6d7d9;
+}
+.info_box_wrap .info_box dl + dl{
+    padding-top: 6px;
+}
+.info_box_wrap .info_box dl:last-child dd{
+    padding: 0;
+    border-bottom: 0;
+}
+
+.btn_wrap.sub{
+    padding: 40px 16px;
+}
+/* //mark: header */
+header{
+    position: relative;
+    height: 44px;
+    padding: 0 4px;
+    background: #101113;
+    color: #fff;
+}
+header h1{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    align-items: center;
+    font-family: 'genesisHead';
+    font-weight: 100;
+    font-size: 15px;
+    min-height: 44px;
+}
+header .home{
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 13px;
+    width: 30px;
+    height: 30px;
+    transform: translateY(-50%);
+}
+header .home > span{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 18px;
+    height: 19px;
+    background: url('../img/icn_ir.png') 0 -66px;
+    background-size: 85px;
+    background-size: 85px;
+    transform: translate(-50%,-50%);
+}
+header .back{
+    display: block;
+    position: absolute;
+    top: 50%;
+    width: 30px;
+    height: 30px;
+    transform: translateY(-50%);
+}
+header .back > span{
+    position: absolute;
+    top: 50%;
+    width: 7px;
+    left: 50%;
+    height: 13px;
+    background: url('../img/icn_ir.png') 0 -46px;
+    background-size: 85px;
+    transform: translate(-50%,-50%);
+}
+
+/* //mark : loading */
+.loading-container{
+    display: flex;
+    position: fixed;
+    top:0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0,0,0,.8);
+}
+.loading-container .loading{
+    margin: 5% auto;
+    height: 100px;
+    width: 100px;
+    border: 1px solid rgba(111,111,111,.3);
+    border-right-color: #936148;
+    border-radius: 100%;
+    -webkit-animation: spin 800ms infinite linear;
+    animation: spin 800ms infinite linear;
+}
+
+@keyframes spin {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(359deg); }
+}

@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="initial-scale=1, viewport-fit=cover">
+    <link href="../../img/common/favicon.ico" rel="shrtcut icon">
+	<link href="../../img/common/favicon-152.png" rel="apple-touch-icon-precomposed">
+    <title>General settings - GENESIS</title>
+    <link rel="stylesheet" href="../../css/style.css">
+    <script src="../../js/jquery-3.4.1.min.js"></script>
+    <script src="../../js/TNUI.js"></script>
+    <script src="../../js/common.js"></script>
+</head>
+<body class="sub">
+    <div class="container">
+        <header>
+            <h1>General settings</h1>
+            <a href="javascript:history.back()" class="back"><span><span class="hidden">back</span></span></a>
+        </header>
+        <section>
+            <article>
+                <ul class="sub_menulist">
+                    <li class="has_sub ">
+                        <span class="tit">Language</span>
+                        <ul>
+                            <li>
+                                <span class="">
+                                    <input type="radio" id="rad-on1" class="form_radio" name="radio_grp" checked>
+                                    <label for="rad-on1"><span class="label-txt">Korean</span></label>
+                                </span>
+                            </li>
+                            <li>
+                                <span class="">
+                                    <input type="radio" id="rad-on2" class="form_radio" name="radio_grp">
+                                    <label for="rad-on2"><span class="label-txt">English</span></label>
+                                </span>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="has_sub ">
+                        <span class="tit">Keyboard</span>
+                        <ul class="ui-accordian" data-allow-multiple="true" data-trans-speed="300">
+                            <li>
+                                <h3 class="acco-btn">
+                                    <button type="button" id="ui-acco11" class="ui-btn-acco" data-open="true"  aria-expanded="false" aria-controls="acco11" aria-disabled="false"><span>Korean keyboard</span></button>
+                                </h3>
+                                <div class="ui-acco-ct" id="acco11" aria-labelledby="ui-acco01" role="region">
+                                    <ul>
+                                        <li>
+                                            <span class="">
+                                                <input type="radio" id="rad-on11" class="form_radio" name="korKb_grp" checked>
+                                                <label for="rad-on11"><span class="label-txt">Qwery</span></label>
+                                            </span>
+                                        </li>
+                                        <li>
+                                            <span class="">
+                                                <input type="radio" id="rad-on12" class="form_radio" name="korKb_grp">
+                                                <label for="rad-on12"><span class="label-txt">ㄱㄴㄷㄹ</span></label>
+                                            </span>
+                                        </li>
+                                        <li>
+                                            <span class="">
+                                                <input type="radio" id="rad-on13" class="form_radio" name="korKb_grp">
+                                                <label for="rad-on13"><span class="label-txt">Cheonjiin</span></label>
+                                            </span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li>
+                                <h3 class="acco-btn">
+                                    <button type="button" id="ui-acco12" class="ui-btn-acco" data-open="true"  aria-expanded="false" aria-controls="acco12" aria-disabled="false"><span>English keyboard</span></button>
+                                </h3>
+                                <div class="ui-acco-ct" id="acco12" aria-labelledby="ui-acco01" role="region">
+                                <div class="acco-ct">
+                                    <ul>
+                                        <li>
+                                            <span class="">
+                                                <input type="radio" id="rad-on21" class="form_radio" name="enKb_grp" checked>
+                                                <label for="rad-on21"><span class="label-txt">Qwery</span></label>
+                                            </span>
+                                        </li>
+                                        <li>
+                                            <span class="">
+                                                <input type="radio" id="rad-on22" class="form_radio" name="enKb_grp">
+                                                <label for="rad-on22"><span class="label-txt">ABCD</span></label>
+                                            </span>
+                                        </li>
+                                        <li>
+                                            <span class="">
+                                                <input type="radio" id="rad-on23" class="form_radio" name="enKb_grp">
+                                                <label for="rad-on23"><span class="label-txt">10 keys</span></label>
+                                            </span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            
+                        </ul>
+                    </li>
+                    <li class="has_sub ">
+                        <span class="tit pr0">Map Auto Reset Timer
+                            <span class="sub_txt ">After the selected time has passed from the media playback screen, it will automatically return to the map screen.</span>
+                        </span>
+                        <ul>
+                            <li>
+                                <span class="">
+                                    <input type="radio" id="rad-on31" class="form_radio" name="mart" checked>
+                                    <label for="rad-on31"><span class="label-txt">OFF</span></label>
+                                </span>
+                            </li>
+                            <li>
+                                <span class="">
+                                    <input type="radio" id="rad-on32" class="form_radio" name="mart">
+                                    <label for="rad-on32"><span class="label-txt">5 sec</span></label>
+                                </span>
+                            </li>
+                            <li>
+                                <span class="">
+                                    <input type="radio" id="rad-on33" class="form_radio" name="mart">
+                                    <label for="rad-on33"><span class="label-txt">10 sec</span></label>
+                                </span>
+                            </li>
+                            <li>
+                                <span class="">
+                                    <input type="radio" id="rad-on34" class="form_radio" name="mart">
+                                    <label for="rad-on34"><span class="label-txt">20 sec</span></label>
+                                </span>
+                            </li>
+                            
+                        </ul>
+                    </li>
+                    <li class="has_sub ">
+                        <span class="tit pr0">Standby screen</span>
+                        <ul>
+                            <li>
+                                <span class="">
+                                    <input type="radio" id="rad-on41" class="form_radio" name="sc" checked>
+                                    <label for="rad-on41"><span class="label-txt">No indication</span></label>
+                                </span>
+                            </li>
+                            <li>
+                                <span class="">
+                                    <input type="radio" id="rad-on42" class="form_radio" name="sc">
+                                    <label for="rad-on42"><span class="label-txt">digital</span></label>
+                                </span>
+                            </li>
+                        </ul>
+                    </li>
+                    
+                </ul>
+            </article>
+        </section>
+    </div>
+</body>
+</html>

@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="initial-scale=1, viewport-fit=cover">
+    <link href="../../img/common/favicon.ico" rel="shrtcut icon">
+	<link href="../../img/common/favicon-152.png" rel="apple-touch-icon-precomposed">
+    <title>Vehicle settings - GENESIS</title>
+    <link rel="stylesheet" href="../../css/style.css">
+    <script src="../../js/jquery-3.4.1.min.js"></script>
+    <script src="../../js/TNUI.js"></script>
+    <script src="../../js/common.js"></script>
+</head>
+<body class="sub">
+    <div class="container">
+        <header>
+            <h1>Vehicle settings</h1>
+            <a href="javascript:history.back()" class="back"><span><span class="hidden">back</span></span></a>
+        </header>
+        <section>
+            <article>
+                <ul class="sub_menulist">
+                    <li class="has_sub ">
+                        <span class="tit">Light</span>
+                        <ul class="ui-accordian" data-allow-multiple="true" data-trans-speed="300">
+                            <li>
+                                <h3 class="acco-btn">
+                                    <button type="button" id="ui-acco01" class="ui-btn-acco" data-open="true"  aria-expanded="false" aria-controls="acco01" aria-disabled="false"><span>One touch turn signal</span></button>
+                                </h3>
+                                <div class="ui-acco-ct" id="acco01" aria-labelledby="ui-acco01" role="region">
+                                    <ul>
+                                        <li>
+                                            <span class="">
+                                                <input type="radio" id="rad-on01" class="form_radio" name="light" checked>
+                                                <label for="rad-on01"><span class="label-txt">OFF</span></label>
+                                            </span>
+                                        </li>
+                                        <li>
+                                            <span class="">
+                                                <input type="radio" id="rad-on02" class="form_radio" name="light">
+                                                <label for="rad-on02"><span class="label-txt">3 seconds flashing</span></label>
+                                            </span>
+                                        </li>
+                                        <li>
+                                            <span class="">
+                                                <input type="radio" id="rad-on03" class="form_radio" name="light">
+                                                <label for="rad-on03"><span class="label-txt">5 seconds flashing</span></label>
+                                            </span>
+                                        </li>
+                                        <li>
+                                            <span class="">
+                                                <input type="radio" id="rad-on04" class="form_radio" name="light">
+                                                <label for="rad-on04"><span class="label-txt">7 seconds flashing</span></label>
+                                            </span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            
+                        </ul>
+                        <!-- Headlamp escorts -->
+                        <ul>
+                            <li>
+                                <span class="">
+                                    <input type="checkbox" id="chk-cate01" class="form_chk">
+                                    <label for="chk-cate01"><span class="label-txt"><strong>Headlamp escorts</strong></span></label>
+                                </span>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="has_sub ">
+                        <span class="tit">Door</span>
+                        <ul class="ui-accordian" data-allow-multiple="true" data-trans-speed="300">
+                            <li>
+                                <h3 class="acco-btn">
+                                    <button type="button" id="ui-acco11" class="ui-btn-acco" data-open="true"  aria-expanded="false" aria-controls="acco11" aria-disabled="false"><span>Auto Lock</span></button>
+                                </h3>
+                                <div class="ui-acco-ct" id="acco11" aria-labelledby="ui-acco11" role="region">
+                                    <ul>
+                                        <li>
+                                            <span class="">
+                                                <input type="radio" id="rad-on11" class="form_radio" name="lock" checked>
+                                                <label for="rad-on11"><span class="label-txt">Off</span></label>
+                                            </span>
+                                        </li>
+                                        <li>
+                                            <span class="">
+                                                <input type="radio" id="rad-on12" class="form_radio" name="lock">
+                                                <label for="rad-on12"><span class="label-txt">When driving</span></label>
+                                            </span>
+                                        </li>
+                                        <li>
+                                            <span class="">
+                                                <input type="radio" id="rad-on13" class="form_radio" name="lock">
+                                                <label for="rad-on13"><span class="label-txt">When using R / N / D Stage</span></label>
+                                            </span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li>
+                                <h3 class="acco-btn">
+                                    <button type="button" id="ui-acco21" class="ui-btn-acco" data-open="true"  aria-expanded="false" aria-controls="acco21" aria-disabled="false"><span>Auto unlock</span></button>
+                                </h3>
+                                <div class="ui-acco-ct" id="acco21" aria-labelledby="ui-acco21" role="region">
+                                    <ul>
+                                        <li>
+                                            <span class="">
+                                                <input type="radio" id="rad-on21" class="form_radio" name="unlock" checked>
+                                                <label for="rad-on21"><span class="label-txt">Off</span></label>
+                                            </span>
+                                        </li>
+                                        <li>
+                                            <span class="">
+                                                <input type="radio" id="rad-on22" class="form_radio" name="unlock">
+                                                <label for="rad-on22"><span class="label-txt">On power off</span></label>
+                                            </span>
+                                        </li>
+                                        <li>
+                                            <span class="">
+                                                <input type="radio" id="rad-on23" class="form_radio" name="unlock">
+                                                <label for="rad-on23"><span class="label-txt">When using P Stage</span></label>
+                                            </span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            
+                        </ul>
+                        <!-- Press twice to unlock full -->
+                        <ul>
+                            <li>
+                                <span class="">
+                                    <input type="checkbox" id="chk-cate02" class="form_chk">
+                                    <label for="chk-cate02"><span class="label-txt"><strong>Press twice to unlock full</strong></span></label>
+                                </span>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+                <!-- //mark: info box -->
+                <div class="info_box_wrap">
+                    <div class="info_box">
+                        <strong>Light</strong>
+                        <dl>
+                            <dt><span class="tit">One touch turn indicator</span></dt>
+                            <dd><p>Select the number of times the indicator flashes when you turn the indicator light lever slightly.</p></dd>
+                        </dl>
+                        <dl>
+                            <dt><span class="tit">Headland escorts</span></dt>
+                            <dd><p>At start-up [OFF], the tail lights and headlights do not turn off immediately, but turn on for about 15 seconds.</p></dd>
+                        </dl>
+                    </div>
+                    <div class="info_box">
+                        <strong>Door</strong>
+                        <dl>
+                            <dt><span class="tit">Auto lock</span></dt>
+                            <dd><p>Select when all doors are automatically locked.</p></dd>
+                        </dl>
+                        <dl>
+                            <dt><span class="tit">Auto unlock</span></dt>
+                            <dd><p>Choose when all doors are automatically unlocked.</p></dd>
+                        </dl>
+                        <dl>
+                            <dt><span class="tit">Press twice to unlock full</span></dt>
+                            <dd><p>Press the door unlock button twice to unlock all doors.<br/>(Press once to unlock the driver's seat)</p></dd>
+                        </dl>
+                        
+                        
+                    </div>
+                </div>
+            </article>
+        </section>
+    </div>
+</body>
+</html>
