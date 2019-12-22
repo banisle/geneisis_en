@@ -294,6 +294,8 @@ body.bg_type01{
     font-weight: 300;
     text-align: center;
     background: rgba(0,0,0.7);
+    color:rgba(255,255,255,.5);
+    
 }
 .ver_info_wrap .ver_info .icn_sync{
     width: 16px;
@@ -303,6 +305,8 @@ body.bg_type01{
     background-size: 85px;
     -webkit-animation: syncSpin 800ms 2 linear;
     animation: syncSpin 800ms 2 linear;
+    opacity: .5;
+
 }
 
 @keyframes syncSpin {
