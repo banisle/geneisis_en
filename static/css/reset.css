@@ -75,4 +75,4 @@ html,body{height: 100%;}
 .fm-gh{ font-family: 'genesisHead'; }
 
 /* 선택 포커스, 아웃라인 제거 할시 하단 주석 제거 */
-/* *{-webkit-tap-highlight-color:transparent;outline: none;} */
+*{-webkit-tap-highlight-color:transparent;outline: none;}

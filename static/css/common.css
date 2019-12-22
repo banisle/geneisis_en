@@ -190,7 +190,6 @@ body.sub .depth2{
     display: flex;
     position: relative;
     align-items: center;
-    min-height: 69px;
     font-family: 'genesisHead';
     font-weight: 100;
     font-size: 15px;
@@ -213,6 +212,8 @@ body.sub .depth2{
     display: flex;
     justify-content: flex-start;
     align-items: center;
+    width: 100%;
+    min-height: 69px;
     margin: 0;
 }
 .set_menulist li .ch_badge {
