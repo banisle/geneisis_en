@@ -87,6 +87,7 @@ body.main{
     background: #141414;
 }
 
+
 /* //mark: sub */
 body.sub{
     background: #fafbfd;
@@ -232,8 +233,10 @@ body.sub .depth2{
     text-transform: uppercase;
 }
 .set_menulist li .ch_badge > span{
+    width: 12px;
     font-size: 13px;
     font-weight: 500;
+    text-align: center;
     color: #fff;
 }
 .set_menulist li .tit_grp{
@@ -298,7 +301,15 @@ body.bg_type01{
     margin-right: 8px;
     background: url('../img/icn_ir.png') -21px -66px;
     background-size: 85px;
+    -webkit-animation: syncSpin 800ms 2 linear;
+    animation: syncSpin 800ms 2 linear;
 }
+
+@keyframes syncSpin {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(359deg); }
+}
+
 .info_box_wrap{
     padding: 30px 16px 0;
 }
