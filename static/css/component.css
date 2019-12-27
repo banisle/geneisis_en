@@ -237,7 +237,6 @@ input:focus {
 .btn_ok:active,
 .btn_ok:hover {
 	background: #6f6f6f;
-	border-color: #131315;
 }
 
 .btn_no:active,
@@ -630,7 +629,7 @@ ul.ui-tab li span {
 
 .ui-accordian h3.acco-btn .ui-btn-acco {
 	display: block;
-	padding-right: 29px;
+	padding-right: 13px;
 	width: 100%;
 	text-align: left;
 	height: 56px;
@@ -649,7 +648,7 @@ ul.ui-tab li span {
 	background-size: 85px;
 	z-index: 1111;
 	top: 50%;
-	right: 29px;
+	right: 13px;
 	transform: translateY(-50%);
 }
 
@@ -662,7 +661,7 @@ ul.ui-tab li span {
 	background-size: 85px;
 	z-index: 1111;
 	top: 50%;
-	right: 29px;
+	right: 13px;
 	transform: translateY(-50%);
 }
 
