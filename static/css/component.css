@@ -157,7 +157,11 @@ input:focus {
 	margin: 0 5px
 }
 
-.btn_org {
+.btn_no,
+.btn_ok,
+.btn_apply,
+.btn_login,
+.btn_orgn{
 	display: inline-block;
 	position: relative;
 	width: 100%;
@@ -176,6 +180,10 @@ input:focus {
 }
 
 /* ie9 버튼 pressed 효과 제거 position 속성 추가 */
+.btn_no>span,
+.btn_ok>span,
+.btn_apply>span,
+.btn_login>span,
 .btn_org>span {
 	display: inline-block;
 	/* position: absolute; */
@@ -187,6 +195,8 @@ input:focus {
 	padding: 0 20px 0;
 	color: #131313;
 }
+
+
 .btn_org.free_width{min-width: auto;}
 .btn_org.free_width >span{position: relative;}
 
@@ -322,62 +332,6 @@ input:focus {
 	color: #b0b0b3;
 }
 
-.btn_icn {
-	display: inline-block;
-	height: 32px;
-	padding: 0;
-	border-radius: 2px;
-	text-align: center;
-	vertical-align: middle;
-	font-size: 14px;
-	line-height: 30px;
-	letter-spacing: 0;
-	box-sizing: border-box;
-	background-color: #f3f5f8;
-	border: 1px solid #9b9fa8;
-	color: #575b63;
-}
-
-.btn_icn>span {
-	padding: 0 12px 0;
-}
-
-.btn_icn>span>i.fa,
-.btn_icn>span>i.fas {
-	padding: 0 5px 0 0;
-}
-
-.btn_icn:active,
-.btn_icn:hover {
-	background-color: #e9ebef;
-	border-color: #2b2e38;
-	color: #2b2e38;
-}
-
-.btn_icn:disabled,
-.btn_icn:disabled:active,
-.btn_icn:disabled:hover {
-	background-color: #fff;
-	border-color: #e9ebef;
-	color: #e9ebef;
-}
-
-.btn.list {
-	border: 1px solid #d2d2d2;
-	font-size: 16px;
-	color: #666;
-	line-height: 36px;
-	padding: 0 27px;
-}
-
-.btn span {
-	line-height: 1
-}
-
-.btn.list:focus,
-.btn.list:hover {
-	border-color: #3ead57;
-}
 
 .btn_mid {
 	min-width: 136px;
