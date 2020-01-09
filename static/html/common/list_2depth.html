@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="initial-scale=1, viewport-fit=cover">
+    <link href="../../img/common/favicon.ico" rel="shrtcut icon">
+	<link href="../../img/common/favicon-152.png" rel="apple-touch-icon-precomposed">
+    <title>list 2depth GENESIS</title>
+    <link rel="stylesheet" href="../../css/style.css">
+    <script src="../../js/jquery-3.4.1.min.js"></script>
+    <script src="../../js/TNUI.js"></script>
+    <script src="../../js/common.js"></script>
+</head>
+<body class="sub">
+    <div class="container">
+        <header>
+            <h1>DEPTH 3,4,5</h1>
+            <a href="javascript:history.back()" class="back"><span><span class="hidden">back</span></span></a>
+        </header>
+        <section>
+            <h2 class="depth2">sub tit depth</h2>
+            <article>
+                <!-- chkbox -->
+                <ul class="sub_menulist">
+                    <li class="has_sub ">
+                        <span class="tit">Select 1</span>
+                        <ul>
+                            <li>
+                                <span class="">
+                                    <input type="checkbox" id="chk-01" class="form_chk" checked>
+                                    <label for="chk-01"><span class="label-txt">option 1</span></label>
+                                </span>
+                            </li>
+                            <li>
+                                <span class="">
+                                    <input type="checkbox" id="chk-02" class="form_chk">
+                                    <label for="chk-02"><span class="label-txt">option 2</span></label>
+                                </span>
+                            </li>
+                            <li>
+                                <span class="">
+                                    <input type="checkbox" id="chk-03" class="form_chk">
+                                    <label for="chk-03"><span class="label-txt">option 3</span></label>
+                                </span>
+                            </li>
+                            
+                        </ul>
+                    </li>
+                </ul>
+                
+                <!-- radio -->
+                <ul class="sub_menulist">
+                    <li class="has_sub">
+                        <span class="tit">Select 1</span>
+                        <ul>
+                            <li>
+                                <span class="">
+                                    <input type="radio" id="rad-on1" class="form_radio" name="time" checked>
+                                    <label for="rad-on1"><span class="label-txt">option 1</span></label>
+                                </span>
+                            </li>
+                            <li>
+                                <span class="">
+                                    <input type="radio" id="rad-on2" class="form_radio" name="time">
+                                    <label for="rad-on2"><span class="label-txt">option 2</span></label>
+                                </span>
+                            </li>
+                        </ul>
+                    </li>
+                    
+                </ul>
+                <!-- 설명글 샘플 -->
+                <ul class="sub_menulist">
+                    <li>
+                        <span class="tit">
+                            <input type="checkbox" id="chk-cate01" class="form_chk">
+                            <label for="chk-cate01"><span class="label-txt"><strong>Select 3</strong></span></label>
+                        </span>
+                        <span class="sub_txt">설명글이 있는 경우의 샘플입니다.<br>That supports Android Auto width a USB cable</span>
+                    </li>
+                </ul>
+                <!-- 추가 리스트 h:120-->
+                <ul class="set_menulist type03">
+                    <li>
+                        <a href="#">
+                            <div class="tit_grp">
+                                <span class="tit">List 1</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <div class="tit_grp">
+                                <span class="tit">List 2</span>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+
+                <!-- 추가 서브리스트 h:112 -->
+                <div class="set_menulist type04">
+                    <span class="h_tit">title</span>
+                    <ul>
+                        <li>
+                            <a href="#">
+                                <span class="tit">2depth List 1</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span class="tit">2depth List 2</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span class="tit">2depth List 3</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- 어코디언 -->
+                <ul class="sub_menulist">
+                    <li class="has_sub ">
+                        <span class="tit">title</span>
+                        <ul class="ui-accordian" data-allow-multiple="true" data-trans-speed="300">
+                            <li>
+                                <h3 class="acco-btn">
+                                    <button type="button" id="ui-acco01" class="ui-btn-acco"   aria-expanded="false" aria-controls="acco01" aria-disabled="false"><span>option 1</span></button>
+                                </h3>
+                                <div class="ui-acco-ct" id="acco01" aria-labelledby="ui-acco01" role="region">
+                                    <ul>
+                                        <li>
+                                            <span class="">
+                                                <input type="radio" id="rad-on01" class="form_radio" name="mapTxt" checked>
+                                                <label for="rad-on01"><span class="label-txt">select 1</span></label>
+                                            </span>
+                                        </li>
+                                        <li>
+                                            <span class="">
+                                                <input type="radio" id="rad-on02" class="form_radio" name="mapTxt">
+                                                <label for="rad-on02"><span class="label-txt">select 1</span></label>
+                                            </span>
+                                        </li>
+                                        <li>
+                                            <span class="">
+                                                <input type="radio" id="rad-on03" class="form_radio" name="mapTxt">
+                                                <label for="rad-on03"><span class="label-txt">select 3</span></label>
+                                            </span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li>
+                                <h3 class="acco-btn">
+                                    <button type="button" id="ui-acco02" class="ui-btn-acco"   aria-expanded="false" aria-controls="acco02" aria-disabled="false"><span>option 2</span></button>
+                                </h3>
+                                <div class="ui-acco-ct" id="acco02" aria-labelledby="ui-acco02" role="region">
+                                    <ul>
+                                        <li>
+                                            <span class="">
+                                                <input type="radio" id="chk-on11" class="form_chk" name="mapTm" checked>
+                                                <label for="chk-on11"><span class="label-txt">option 1</span></label>
+                                            </span>
+                                        </li>
+                                        <li>
+                                            <span class="">
+                                                <input type="radio" id="chk-on12" class="form_chk" name="mapTm">
+                                                <label for="chk-on12"><span class="label-txt">option 2</span></label>
+                                            </span>
+                                        </li>
+                                        <li>
+                                            <span class="">
+                                                <input type="radio" id="chk-on13" class="form_chk" name="mapTm">
+                                                <label for="chk-on13"><span class="label-txt">option 3</span></label>
+                                            </span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            
+                        </ul>
+                    </li>
+                </ul>
+                
+                <!-- //mark : btn -->
+                <div class="btn_wrap sub fixed">
+                    <button type="button" class="btn_org btn_ok"><span>SAVE</span></button>
+                </div>
+            </article>
+        </section>
+    </div>
+</body>
+</html>

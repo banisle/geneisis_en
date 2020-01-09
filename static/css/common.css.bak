@@ -59,9 +59,6 @@ body.main{
     height: 100%;
     color: #fff;
 }
-.container.main section{
-    padding-bottom: 90px;
-}
 .container.main .menulist li a > span{
     display: flex;
     position: relative;
@@ -98,10 +95,6 @@ body.sub{
 body.sub .container{
     padding-bottom: 40px;
 }
-body.sub .container > section{
-    padding-bottom: 50px;
-}
-
 body.sub .depth2{
     padding-left: 16px;
     background: #101113;
@@ -259,30 +252,6 @@ body.sub .depth2{
     color: rgba(20,20,20,.85);
 }
 
-.set_menulist.type02 .tit_grp{padding-left: 0}
-.set_menulist.type02 .tit_grp .tit{font-weight: 500}
-
-.set_menulist.type03 li >a{ min-height: 60px; }
-.set_menulist.type03 .tit_grp{padding-left: 0}
-.set_menulist.type03 .tit_grp .tit{font-weight: 500}
-
-.set_menulist.type04{padding-top: 0;}
-.set_menulist.type04 li >a{ min-height: 56px; }
-.set_menulist.type04 .h_tit{
-    display: inline-block;
-    width: 100%;
-    font-size: 15px;
-    font-weight: 500;
-    color: #141414;
-    padding: 30px 27px 6px 0;
-    border-bottom: 1px solid #a7a7a8;
-    box-sizing: border-box;
-}
-.set_menulist.type04 .tit{
-    font-size: 13px;
-    color:rgba(20,20,20,.85);
-}
-
 .radio_prst .label-txt .hz{
     float: left;
     font-weight: 500;
@@ -311,7 +280,7 @@ body.bg_type01{
     background: #f3f3fb;
 }
 .ver_info_wrap{
-    padding: 23px 16px 8px;
+    padding: 23px 16px 16px;
 }
 .ver_info_wrap .ver_info{
     display: flex;
@@ -381,23 +350,12 @@ body.bg_type01{
 }
 
 .btn_wrap.sub{
-    padding: 25px 16px;
+    padding: 40px 16px;
 }
 
-
-.btn_wrap.fixed{
-    position: fixed;
-    bottom:0;
-    width: 100%;
-    box-sizing: border-box;
-    background: rgba(0,0,0,.2);
+.btn_wrap.sub1{
+    padding: 10px 16px;
 }
-
-.btn_wrap.main{ padding: 25px 16px; }
-.btn_wrap.main.fixed{ 
-    background: rgba(255,255,255,.12);
-}
-
 /* //mark: header */
 header{
     position: relative;

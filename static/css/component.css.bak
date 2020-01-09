@@ -233,6 +233,10 @@ input:focus {
 .btn_apply:hover{
 	background: #141414;
 	border:1px solid #6f6f6f;
+	position: absolute;
+    left: 0;
+    bottom: 0;
+	padding: 0px 0;
 }
 .btn_apply:active > span,
 .btn_apply:hover > span{
