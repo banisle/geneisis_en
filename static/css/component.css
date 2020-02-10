@@ -343,7 +343,9 @@ input.form_chk+label {
 	display: inline-block;
 	position: relative;
 	width: 100%;
-    line-height: 18px;
+	padding-right: 24px;
+	line-height: 18px;
+    box-sizing: border-box;
 }
 
 input.form_chk+label:before {
